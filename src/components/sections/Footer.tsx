@@ -114,7 +114,7 @@ export const Footer = () => {
               <p>Creative Hub, Mumbai</p>
               <p>India 400001</p>
               <p className="pt-2">+91 98765 43210</p>
-              <p>hello@ugrowagency.com</p>
+              <p>hello@xyzagency.com</p>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-muted-foreground/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 U Grow Agency. All Rights Reserved.
+            © 2025 XYZ Agency. All Rights Reserved.
           </p>
           
           <Button

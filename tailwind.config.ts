@@ -52,11 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'brand-green': {
-					DEFAULT: 'hsl(var(--brand-green))',
-					light: 'hsl(var(--brand-green-light))',
-					dark: 'hsl(var(--brand-green-dark))'
+				// U Grow theme colors
+				'bg-dark': 'hsl(var(--bg-dark))',
+				'purple': {
+					DEFAULT: 'hsl(var(--purple))',
+					light: 'hsl(var(--purple-light))',
+					glow: 'hsl(var(--purple-glow))',
 				},
+				'neon-green': {
+					DEFAULT: 'hsl(var(--neon-green))',
+					glow: 'hsl(var(--green-glow))',
+				},
+				'dark-surface': 'hsl(var(--dark-surface))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -89,11 +96,46 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 20px hsl(var(--neon-green) / 0.5)'
+					},
+					'50%': { 
+						boxShadow: '0 0 30px hsl(var(--neon-green) / 0.8), 0 0 50px hsl(var(--neon-green) / 0.3)'
+					}
+				},
+				'marquee': {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' }
+				},
+				'shine': {
+					'0%': { left: '-100%' },
+					'100%': { left: '100%' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fade-in-up 0.6s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'marquee': 'marquee 30s linear infinite',
+				'shine': 'shine 5s infinite'
 			}
 		}
 	},

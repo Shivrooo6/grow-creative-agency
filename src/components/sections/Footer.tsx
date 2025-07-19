@@ -13,8 +13,8 @@ export const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-3xl font-bold">
-              <span className="text-white">U</span>
-              <span className="text-brand-green"> Grow</span>
+              <span className="text-white">X</span>
+              <span className="text-brand-green"> YZ</span>
             </h3>
             <p className="text-muted-foreground">
               Empowering businesses through creative marketing and technology solutions. 

@@ -78,7 +78,7 @@ export const Header = () => {
                     <iframe 
                       src="https://docs.google.com/forms/d/e/1FAIpQLSc1sTAAXin64mEFrrCqDo7rLNEuYjqySQ5Gu77qwp9xgRFlHg/viewform?embedded=true" 
                       width="100%" 
-                      height="600" 
+                      height="800" 
                       frameBorder="0" 
                       marginHeight={0} 
                       marginWidth={0}

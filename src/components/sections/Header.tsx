@@ -44,8 +44,8 @@ export const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="text-2xl lg:text-3xl font-bold">
-              <span className="text-white">U</span>
-              <span className="text-neon-green gradient-text text-shadow-neon"> Grow</span>
+              <span className="text-white">X</span>
+              <span className="text-neon-green gradient-text text-shadow-neon"> YZ</span>
             </div>
 
             {/* Desktop Navigation */}

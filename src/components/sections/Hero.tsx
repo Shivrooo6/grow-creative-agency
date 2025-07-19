@@ -19,33 +19,79 @@ export const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content - Founder Image */}
+          {/* Left Content - Creative 3D Animation */}
           <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
-            <div className="relative group">
-              {/* 3D Wireframe Background Effect */}
-              <div className="absolute -inset-8 opacity-30">
-                <div className="w-full h-full bg-gradient-to-br from-neon-green/20 via-purple/30 to-transparent rounded-3xl animate-float" />
-                <div className="absolute top-4 left-4 w-12 h-12 border-2 border-neon-green/40 rounded-lg animate-pulse" />
-                <div className="absolute bottom-8 right-8 w-8 h-8 border-2 border-purple/60 rounded-full animate-bounce" />
+            <div className="relative w-96 h-96 lg:w-[500px] lg:h-[500px]">
+              {/* 3D Floating Elements */}
+              <div className="absolute inset-0">
+                {/* Central Orb */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-neon-green to-purple rounded-full animate-pulse-glow shadow-2xl"></div>
+                
+                {/* Floating Cards */}
+                <div className="absolute top-16 left-8 w-20 h-28 bg-card-gradient border border-neon-green/30 rounded-lg animate-float shadow-lg" style={{ animationDelay: '0s' }}>
+                  <div className="p-2 text-center">
+                    <div className="w-4 h-4 bg-neon-green rounded-full mx-auto mb-2"></div>
+                    <div className="text-xs text-gray-300">Growth</div>
+                  </div>
+                </div>
+                
+                <div className="absolute top-32 right-12 w-24 h-32 bg-card-gradient border border-purple/50 rounded-xl animate-float shadow-lg" style={{ animationDelay: '1s' }}>
+                  <div className="p-3 text-center">
+                    <div className="w-6 h-6 bg-purple rounded-lg mx-auto mb-2"></div>
+                    <div className="text-xs text-gray-300">Creative</div>
+                  </div>
+                </div>
+                
+                <div className="absolute bottom-24 left-16 w-18 h-24 bg-card-gradient border border-neon-green/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '2s' }}>
+                  <div className="p-2 text-center">
+                    <div className="w-3 h-3 bg-neon-green rounded-full mx-auto mb-1"></div>
+                    <div className="text-xs text-gray-300">Tech</div>
+                  </div>
+                </div>
+                
+                <div className="absolute bottom-16 right-8 w-22 h-28 bg-card-gradient border border-purple/40 rounded-xl animate-float shadow-lg" style={{ animationDelay: '0.5s' }}>
+                  <div className="p-2 text-center">
+                    <div className="w-5 h-5 bg-purple rounded-full mx-auto mb-2"></div>
+                    <div className="text-xs text-gray-300">Results</div>
+                  </div>
+                </div>
+                
+                {/* Orbiting Particles */}
+                <div className="absolute top-1/2 left-1/2 w-80 h-80 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="absolute w-6 h-6 bg-neon-green/60 rounded-full animate-spin" style={{ animationDuration: '8s', top: '0', left: '50%', transformOrigin: '0 160px' }}></div>
+                  <div className="absolute w-4 h-4 bg-purple/60 rounded-full animate-spin" style={{ animationDuration: '12s', animationDirection: 'reverse', top: '50%', right: '0', transformOrigin: '-160px 0' }}></div>
+                  <div className="absolute w-5 h-5 bg-neon-green/40 rounded-full animate-spin" style={{ animationDuration: '10s', bottom: '0', left: '50%', transformOrigin: '0 -160px' }}></div>
+                  <div className="absolute w-3 h-3 bg-purple/80 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse', top: '50%', left: '0', transformOrigin: '160px 0' }}></div>
+                </div>
+                
+                {/* Wireframe Network */}
+                <svg className="absolute inset-0 w-full h-full opacity-30" viewBox="0 0 400 400">
+                  <defs>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="hsl(var(--neon-green))" />
+                      <stop offset="100%" stopColor="hsl(var(--purple))" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M50,50 Q200,100 350,50" stroke="url(#lineGradient)" strokeWidth="2" fill="none" className="animate-pulse" />
+                  <path d="M50,200 Q200,150 350,200" stroke="url(#lineGradient)" strokeWidth="2" fill="none" className="animate-pulse" style={{ animationDelay: '1s' }} />
+                  <path d="M50,350 Q200,300 350,350" stroke="url(#lineGradient)" strokeWidth="2" fill="none" className="animate-pulse" style={{ animationDelay: '2s' }} />
+                  <circle cx="50" cy="50" r="4" fill="hsl(var(--neon-green))" className="animate-pulse" />
+                  <circle cx="350" cy="50" r="4" fill="hsl(var(--purple))" className="animate-pulse" style={{ animationDelay: '0.5s' }} />
+                  <circle cx="200" cy="200" r="6" fill="hsl(var(--neon-green))" className="animate-pulse" style={{ animationDelay: '1s' }} />
+                  <circle cx="50" cy="350" r="4" fill="hsl(var(--purple))" className="animate-pulse" style={{ animationDelay: '1.5s' }} />
+                  <circle cx="350" cy="350" r="4" fill="hsl(var(--neon-green))" className="animate-pulse" style={{ animationDelay: '2s' }} />
+                </svg>
+                
+                {/* Holographic Grid */}
+                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDAsIDI1NSwgMTIyLCAwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40 animate-pulse"></div>
+                
+                {/* Energy Waves */}
+                <div className="absolute inset-0">
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border-2 border-neon-green/30 rounded-full animate-ping" style={{ animationDuration: '3s' }}></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 border border-purple/20 rounded-full animate-ping" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-neon-green/10 rounded-full animate-ping" style={{ animationDuration: '5s', animationDelay: '2s' }}></div>
+                </div>
               </div>
-              
-              {/* Main Frame Effect */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-neon-green via-purple-light to-neon-green opacity-75 blur-xl rounded-3xl animate-pulse-glow"></div>
-              <div className="absolute -inset-2 bg-purple-gradient rounded-2xl shadow-2xl"></div>
-              
-              {/* TODO: Replace with actual founder image */}
-              <div className="relative bg-dark-surface p-3 rounded-2xl">
-                <img
-                  src="/lovable-uploads/93903fe1-351d-42fa-b1c6-7ce782e9128a.png"
-                  alt="Founder - U Grow Agency"
-                  className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              
-              {/* Floating Holographic Elements */}
-              <div className="absolute -top-6 -right-6 w-16 h-16 bg-neon-green/30 rounded-full animate-float blur-sm"></div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-purple/40 rounded-lg animate-pulse"></div>
-              <div className="absolute top-1/2 -right-8 w-6 h-20 bg-gradient-to-b from-neon-green/50 to-transparent rounded-full animate-bounce"></div>
             </div>
           </div>
           

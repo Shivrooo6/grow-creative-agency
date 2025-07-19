@@ -153,12 +153,6 @@ export const Header = () => {
               <h3 className="text-lg font-bold text-neon-green mb-4">Book Your Free Strategy Call</h3>
               <iframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLSc1sTAAXin64mEFrrCqDo7rLNEuYjqySQ5Gu77qwp9xgRFlHg/viewform?embedded=true" 
-                width="100%" 
-                height="500" 
-                frameBorder="0" 
-                marginHeight={0} 
-                marginWidth={0}
-                className="rounded-lg"
               >
                 Loading…
               </iframe>

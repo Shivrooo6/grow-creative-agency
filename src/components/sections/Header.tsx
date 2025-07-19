@@ -76,14 +76,7 @@ export const Header = () => {
                     <h3 className="text-xl font-bold text-neon-green mb-4">Book Your Free Strategy Call</h3>
                     {/* TODO: Replace with actual Google Form embed URL */}
                     <iframe 
-                      src="https://docs.google.com/forms/d/e/1FAIpQLSc1sTAAXin64mEFrrCqDo7rLNEuYjqySQ5Gu77qwp9xgRFlHg/viewform?embedded=true" 
-                      width="100%" 
-                      height="800" 
-                      frameBorder="0" 
-                      marginHeight={0} 
-                      marginWidth={0}
-                      className="rounded-lg"
-                    >
+                      src="https://docs.google.com/forms/d/e/1FAIpQLSc1sTAAXin64mEFrrCqDo7rLNEuYjqySQ5Gu77qwp9xgRFlHg/viewform?embedded=true"
                       Loading…
                     </iframe>
                   </div>
